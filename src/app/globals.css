@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-jost);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  --radius: 0.625rem;
+  /* Paleta natural: espresso #3E2E1F · taupe #8A735C · sand #C7B59A · creme #F2EDE6 · oliva #6B6F5E */
+  --background: #f2ede6;
+  --foreground: #3e2e1f;
+  --card: #fbf9f5;
+  --card-foreground: #3e2e1f;
+  --popover: #fbf9f5;
+  --popover-foreground: #3e2e1f;
+  --primary: #8a735c;
+  --primary-foreground: #f7f4ee;
+  --secondary: #e5dccb;
+  --secondary-foreground: #3e2e1f;
+  --muted: #e9e2d5;
+  --muted-foreground: #6f6356;
+  --accent: #c7b59a;
+  --accent-foreground: #3e2e1f;
+  --destructive: #c0492e;
+  --border: #ddd2c0;
+  --input: #ddd2c0;
+  --ring: #8a735c;
+}
+
+.dark {
+  --background: #241a11;
+  --foreground: #f2ede6;
+  --card: #3e2e1f;
+  --card-foreground: #f2ede6;
+  --popover: #3e2e1f;
+  --popover-foreground: #f2ede6;
+  --primary: #c7b59a;
+  --primary-foreground: #2a1f15;
+  --secondary: #4a3829;
+  --secondary-foreground: #f2ede6;
+  --muted: #4a3829;
+  --muted-foreground: #c7b59a;
+  --accent: #6b6f5e;
+  --accent-foreground: #f2ede6;
+  --destructive: #d9694a;
+  --border: #f2ede61f;
+  --input: #f2ede626;
+  --ring: #c7b59a;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    letter-spacing: 0.015em;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}

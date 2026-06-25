@@ -1,0 +1,31 @@
+# BYTU
+
+> BYTU é uma plataforma de gestão para escolas de kitesurf, wingfoil e windsurf. Reúne alunos, matrículas, pacotes de aulas, agenda por janela de vento, controle de equipamentos com horas de uso, integração com WhatsApp e financeiro em um só lugar. O beta é gratuito e, nesta fase, exclusivo para escolas localizadas no Ceará (Brasil), próximas do time que desenvolve o produto.
+
+- Site (beta / vendas): https://bytu.com.br
+- Aplicativo (login): https://bytu.app
+- Idioma: Português (pt-BR)
+- Contato: contato@bytu.com.br
+- Telefone: +55 48 3197-6044
+
+## O que é
+BYTU é um software de gestão (ERP) para escolas de esportes de vento. Substitui planilhas e mensagens soltas pela operação organizada de ponta a ponta: cadastro de alunos, pacotes contratados, agenda de aulas por instrutor, controle de aulas usadas e financeiro da escola.
+
+## Para quem
+Escolas de kitesurf, wingfoil, windsurf e foil que dão aulas regularmente e querem organizar a operação. Nesta fase de beta, apenas escolas localizadas no estado do Ceará (Brasil).
+
+## Principais recursos
+- Alunos e matrículas: cadastro completo, pacotes e histórico de aulas.
+- Agenda de aulas: por dia e por instrutor, com remarcações e controle de aulas usadas.
+- Pacotes e financeiro: pacotes de aulas, valores e financeiro em um só lugar.
+- Equipamentos e horas de uso: inventário de kites, pranchas e barras com acompanhamento das horas de uso para planejar manutenção e troca.
+- Integração com WhatsApp: conversa com alunos e envio de lembretes de aulas pelo WhatsApp.
+- Termo de compromisso digital: envio e assinatura digital do termo de compromisso dos alunos, com registro de data e IP para segurança jurídica.
+- Vários instrutores: distribuição de aulas e acompanhamento da equipe.
+- Operação movida pelo vento: feito para a rotina de quem depende da janela de vento.
+
+## Beta
+- Exclusivo, nesta fase, para escolas localizadas no Ceará (Brasil), próximas do time de desenvolvimento, o que permite suporte de perto e presencial.
+- O uso é gratuito durante todo o período de beta, sem cartão de crédito.
+- Inclui suporte direto da equipe, influência no roadmap e ajuda na migração de dados.
+- Como participar: preencher o formulário de interesse em https://bytu.com.br (nome da escola e contato). A equipe avalia e envia o convite de acesso por e-mail ou WhatsApp.
