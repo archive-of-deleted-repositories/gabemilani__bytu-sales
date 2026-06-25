@@ -12,8 +12,11 @@ import {
 } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { BetaForm } from "@/components/beta-form";
+import { TrackLink } from "@/components/track-link";
 import { faq } from "@/lib/faq";
 import { site } from "@/lib/site";
+
+const year = new Date().getFullYear();
 
 const features = [
   {
@@ -79,12 +82,14 @@ export default function Home() {
             >
               Entrar
             </a>
-            <a
+            <TrackLink
               href="#beta"
+              event="cta_beta"
+              eventData={{ location: "header" }}
               className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
             >
               Quero participar
-            </a>
+            </TrackLink>
           </div>
         </div>
       </header>
@@ -106,19 +111,34 @@ export default function Home() {
             o período.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
+            <TrackLink
               href="#beta"
+              event="cta_beta"
+              eventData={{ location: "hero" }}
               className="inline-flex h-11 w-full items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 sm:w-auto"
             >
               Participar do beta
-            </a>
+            </TrackLink>
+            <TrackLink
+              href={site.whatsappUrl}
+              event="whatsapp_click"
+              eventData={{ location: "hero" }}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-md border border-border px-6 text-sm font-medium text-foreground transition hover:bg-secondary sm:w-auto"
+            >
+              <MessageCircle className="size-4" aria-hidden />
+              Falar no WhatsApp
+            </TrackLink>
+          </div>
+          <p className="mt-4 text-sm">
             <a
               href="#recursos"
-              className="inline-flex h-11 w-full items-center justify-center rounded-md border border-border px-6 text-sm font-medium text-foreground transition hover:bg-secondary sm:w-auto"
+              className="text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
             >
               Ver recursos
             </a>
-          </div>
+          </p>
         </section>
 
         {/* Features */}
@@ -176,6 +196,20 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 text-sm text-muted-foreground">
+                Prefere conversar?{" "}
+                <TrackLink
+                  href={site.whatsappUrl}
+                  event="whatsapp_click"
+                  eventData={{ location: "beta_section" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-primary underline-offset-4 hover:underline"
+                >
+                  Fale com a gente no WhatsApp
+                </TrackLink>
+                .
+              </p>
             </div>
             <div id="beta" className="scroll-mt-20">
               <BetaForm />
@@ -217,16 +251,23 @@ export default function Home() {
             <a href={`mailto:${site.contactEmail}`} className="hover:text-foreground">
               {site.contactEmail}
             </a>
-            <a href={site.phoneHref} className="hover:text-foreground">
+            <TrackLink
+              href={site.whatsappUrl}
+              event="whatsapp_click"
+              eventData={{ location: "footer" }}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground"
+            >
               {site.phone}
-            </a>
+            </TrackLink>
             <Link href={site.appUrl} className="hover:text-foreground">
               Acessar app
             </Link>
           </div>
         </div>
         <p className="pb-6 text-center text-xs text-muted-foreground">
-          © {site.name}
+          © {year} {site.name}
         </p>
       </footer>
     </div>

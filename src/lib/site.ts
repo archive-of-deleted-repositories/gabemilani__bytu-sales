@@ -14,6 +14,10 @@ export const site = {
     "BYTU é a plataforma de gestão para escolas de kitesurf, wingfoil e windsurf: alunos, matrículas, pacotes, agenda de aulas por janela de vento, controle de equipamentos com horas de uso, termo de compromisso digital, integração com WhatsApp e financeiro em um só lugar. Nesta fase, o beta é exclusivo para escolas no Ceará, próximas do time que desenvolve o produto.",
   contactEmail: "contato@bytu.com.br",
   phone: "+55 48 3197-6044",
-  phoneHref: "tel:+554831976044",
+  whatsappUrl:
+    "https://wa.me/554831976044?text=" +
+    encodeURIComponent(
+      "Olá! Tenho uma escola e quero participar do beta do BYTU.",
+    ),
   locale: "pt-BR",
 } as const;

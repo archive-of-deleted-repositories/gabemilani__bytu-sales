@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Jost } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { JsonLd } from "@/components/json-ld";
 import { site } from "@/lib/site";
@@ -64,10 +65,6 @@ export const metadata: Metadata = {
     title: site.title,
     description: site.description,
   },
-  icons: {
-    apple: "/icons/apple-touch-icon.png",
-    icon: "/icons/icon-192.png",
-  },
 };
 
 export const viewport: Viewport = {
@@ -93,6 +90,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <JsonLd />
+        <Analytics />
       </body>
     </html>
   );
